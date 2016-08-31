@@ -7,7 +7,7 @@ MAINTAINER Gabor Huszak <huszy@bigfish.hu>
 
 # Install FPM
 RUN apt-get update \
-    && apt-get -y --no-install-recommends install php7.0-fpm php7.0-pgsql php-pear php7.0-dev libcurl4-openssl-dev pkg-config libssl-dev make \
+    && apt-get -y --no-install-recommends install php7.0-fpm php7.0-pgsql php-pear php7.0-dev php7.0-gd libcurl4-openssl-dev pkg-config libssl-dev make \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 

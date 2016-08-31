@@ -1,6 +1,10 @@
 # docker
 Docker repositories
 
-PHP7.0 FPM
+PHP 7.0 FPM
 ----------
-PHP7.0 FPM with PostgreSQL and MongoDB packages installed
+PHP version 7.0.9 FPM with the following extra packages:
+
+* MongoDB 
+* GD
+* PostgreSQL
