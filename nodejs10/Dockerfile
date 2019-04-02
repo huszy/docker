@@ -1,10 +1,11 @@
 FROM debian:jessie
 MAINTAINER BIG FISH <huszy@bigfish.hu>
 
+ENV DEBIAN_FRONTEND=noninteractive
 #
 # Install Node.js 10.x
 #
-RUN apt-get update && apt-get install -y apt-transport-https
+RUN apt-get update && apt-get install -y apt-transport-https wget
 
 ENV NODEJS_VERSION 10.11.0-1nodesource1
 
