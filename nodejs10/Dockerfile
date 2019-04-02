@@ -13,6 +13,6 @@ RUN wget -qO- https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add
 	&& echo 'deb https://deb.nodesource.com/node_10.x jessie main' >> /etc/apt/sources.list \
 	&& echo 'deb-src https://deb.nodesource.com/node_10.x jessie main' >> /etc/apt/sources.list
 
-RUN apt-get update && apt-get install -y nodejs=${NODEJS_VERSION}
+RUN apt-get update && apt-get install -y nodejs
 
 RUN npm install -g yarn
